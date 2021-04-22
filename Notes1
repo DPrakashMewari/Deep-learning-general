@@ -1,0 +1,49 @@
+What is Deep Learning ?
+Deep Learning Mimics the Human brain.
+
+
+A.Neural Networks : Is something that is meant to simulate work as human brain
+
+Structure
+
+Input Layer :
+f1,f2,f3
+
+Hidden Layer
+any no of layer
+
+Output layer
+any number 
+binary,or anything
+
+--------------
+
+How neural Networks works?
+
+Input  -> Hidden ->Op
+
+Input 
+x1 ,x2
+|w1
+|
+Hidden 
+|w4
+|
+output
+----------------------------
+
+for example :
+y = w1X1 + W2X2 + W3X3
+Y will pass to hiden layer 
+
+The two operation will going to happen...
+1) y = f(∑w1x1,w2x2+bi)
+
+# Activation function
+2) z = Act(y)
+# Sigmoid 
+<0.5 not activated, > 0.5 will activated
+Based on that label assinged will be output
+
+
+----------------------------
