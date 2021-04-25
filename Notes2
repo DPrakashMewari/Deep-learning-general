@@ -1,0 +1,44 @@
+There are many types of activation function 
+
+# Activation function 
+
+1. Sigmoid Function 
+2. ReLu
+
+1 . Sigmoid function :
+it is plotted as S shaped graph
+
+equation : 
+A = 1/(1+e power(-x))
+
+Values Ranges : 0 and 1 
+Uses : it is used for binary classification where is result is 0 and 1 , result can be predicted with . if value is greater than 0.5 is 1 , otherwise it will be 0.
+
+2. ReLu : know as Rectified linear unit.It is most widely used activation function 
+.implemented in hidden layer of neural network.
+
+A(x) = max(0,x) : It gives an output x if x is positive an 0 otherwise.
+it value ranges bw 0 and inf.
+it efficient and easy for computation.
+it is faster than sigmoid .
+
+How to train neural network using back propogation !
+
+So what is backpropogation?
+it is method for reintialized weights of neural network based on the error.Proper assing weigh will reduce error rates.
+
+In Neural Network we predicted output 
+And we see there see error difference in desired values 
+
+--Steps How back propogate
+
+1. Input we passed example x In our connected path 
+2. Input is Modeled using a real weigh W .The weigh are usually randomly selected 
+3. Calculate the op for every neuron from the input layer to hidden layer to the op layer 
+4. Calculate error in the o.p
+error or loss = actual op - Desired op
+5. Travel back from the output layer to the hidden layer to adjust the weights such that the error is decreased.
+
+to keep repeating this steps the desired op is achived .
+
+
