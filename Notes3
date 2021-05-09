@@ -1,0 +1,40 @@
+# How to train Multi neural network and gradient Descent ? 
+
+We Know the core of neural network is a function that map some input to the desired target values .
+
+And At Middle 
+We Multiply wait and add bias { Bias is a constant which helps the model in a way that it can fit best for the given data.} in a complete pipeline scenario that does this thing over and over.
+
+after that we predict some value it will compare with expected and model o/p . And it is Done Using Gradient Descent and <--- back progration means again reintialise weight using gradient Descent. Gradient descent will find mind the minima .
+
+If you want to reduce the loss you can use optimizer : Gradient Descent 
+
+
+--------
+**
+<---
+backpropogation              == 1 Epoch
+--->
+Forwardpropogation
+---------------
+
+What is Chain Rule in Back Propogation ?
+
+We Know that backpropogation is use to update weights as we go back so as to reduce the loss function our main aim to get predicted value closer to the actual values 
+
+Multilayer Neural Network : 
+
+Input layer  ---> Hidden Layer --> Hidden Layer --> Output Layer 
+  {w11}              {011}.{W11}    {W11}.{021}  ---> {032}---yhat
+
+AS WE SEE WEIGHTS {weight are real value that are associated with each feature which tell the importance of feature}UPDATE LIKE THIS 
+
+newweight = weightold - Learning (delta loss/delta weightold)
+ #The new weight is old weight minus learning rate multiplied by derivative of loss with respect to old weight.
+
+Like this Chain Rule will formed 
+every layer is affected with other layer and this connection we called chain rule .
+
+
+-----------------------------------
+
