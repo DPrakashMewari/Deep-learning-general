@@ -1,0 +1,24 @@
+
+# What is Vanishing Gradient Problem ?
+ 	In machine learning, the vanishing gradient problem is encountered when training artificial neural networks with gradient-based learning methods and backpropagation. In such methods, each of the neural network's weights receives an update proportional to the partial derivative of the error function with respect to the current weight in each iteration of training. The problem is that in some cases, the gradient will be vanishingly small, effectively preventing the weight from changing its value. In the worst case, this may completely stop the neural network from further training.
+
+ Simply say at a time of backpropogation decreasing of your z value  (Sigmoid)
+
+Because of some activation .There is a solution to use different types of Activation function.
+
+
+# What is Exploding Gradient Problem ?
+
+Exploding gradients are a problem when large error gradients accumulate and result in very large updates to neural network model weights during training. Gradients are used during training to update the network weights, but when the typically this process works best when these updates are small and controlled. When the magnitudes of the gradients accumulate,  an unstable network is likely to occur, which can cause poor predicition results or even a model that reports nothing useful what so ever. There are methods to fix exploding gradients, which include gradient clipping and weight regularization, among others.
+
+Simply say : Weight Problem ,Weight are Much higher in the gradient 
+
+
+# what is Drop out and regularization ?
+Regularization we know use for reducing over fitting and underfitting problem 
+In a Case Deep neural network {Underfitting not gone happen}
+
+In Order to Improve Overfitting we use:
+Drop out : large networks are also slow to use, making it difficult to deal with overfitting by combining the predictions of many different large neural nets at test time. Dropout is a technique for addressing this problem. The key idea is to randomly drop units (along with their connections) from the neural network during training. 
+
+
