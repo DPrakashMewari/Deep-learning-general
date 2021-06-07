@@ -1,0 +1,58 @@
+Activation Function :
+- Linear 
+- Sigmoid 
+- Tanh
+- Relu
+- Leaky Relu 
+- Elu 
+- Prelu
+- Swish Relu
+- Softplus
+- Softmax
+
+
+Activation Function decides whethere a neuron should be activated or not.
+And Main Pupose of the activation function is to intoduce non-linearity into the output of a neuron.
+
+Activation function make it happen backpropogation possible.
+
+
+# Why do We Need Non-Linear activation function : Without an activation  it is just a linear regression the activation function does the non linear transformation.To Do More Complex task 
+
+Types of Activation function
+1. Linear Function: Linear function has the equation similar to straight line y = ax
+if You want to solve linear problem you can apply it on output layer 
+
+2. Sigmoid Function : It is function which is plotted as "S" shaped graph, Usually it is help to classify where the result are in 0 and 1. result were predicted like if value is greater 0.5 it would be 1 , else 0.
+
+3. Tanh Function : It is enhanced version of sigmoid Know as tangent hyperbolic function. it range from -1 to +1.Usually used in Hidden layer.
+
+4. Relu: It is Mostly used activation function . Stands for rectified linear unit.Vastly used in Hidden layers.
+equation is like a(x) = max(0,x),range 0 to inf. It is less computationally expensive.
+
+It is Much better then sigmoid, tanh!
+
+5. LeakyRelu : It is a variant of ReLu .Here instead of Being 0 when z < 0 leaky allows a small non zero constant gradient alpha = 0.01
+
+It help the problem called Dying Relu 
+.problem having a negative slope
+
+6. Elu : Exponential Linear Unit .It produces more accurate result .It is similar to Relu except negative input.
+
+Elu becomes smooth slowly until its equal to -alpha whereas relu sharply smoothness.
+
+7. Parametric Leaky Relu (Prelu): it is variation of leaky relu where alpha is used at time of training rathere then include in hyperparamter.It is good for large data set in small data sets they create a risk of overfitting.
+
+8.Swish Relu : Google brain team launched new activation called swish which is f(x) = x.sigmoid(x) . It is used when neural network layer > 40.It also solve the problem of Dead RElu.It is used in deeper model.
+
+
+9. Softplus : Softplus is an activation function f(x) = log(1+exp(x)). It can be viewed as smooth version of relu.
+
+10. Softmax : Softmax is a type of sigmoid function but it is handy when we are trying to handle classification problem. It handles multiple classes well. softmax function would squeeze the output for each class between 0 and 1. softmax is ideally used in the output layer.
+
+
+Choosing the right activation : 
+When we Dont Know which activation will use we simply go with relu respect with hidden layer and for the we use Sigmoid,Linear . Basis on our Problem
+
+
+---- Again , Activation function does the non linear transformation to the input making it capable to learn and perform well on Complex task -----------
