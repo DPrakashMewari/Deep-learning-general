@@ -1,0 +1,56 @@
+Why RNN ?
+Recurrent Neural Network : Work on sequence of Information . 
+
+But what about NLP it has also
+Takes I/p data, text with tfidf,word2vec,bow
+
+sequence Information will be discarded in NLP
+
+ex : Google assistant , Alexa ,Help in Time Series Using LSTM
+
+
+Architecture:
+
+output ----- text predicted sent to that op
+ f   Output <--|  
+ |
+Input
+
+*sequence Information Kept
+
+again,
+
+
+Our input (text)					
+* weight
+send to hidden 
+100 neuron 
+we get op1 same 
+* weight 
+
+----------
+Op1
+* weight
+send to hidden 
+100 neuron 
+we get op2 same 
+* weight 
+----
+and so ...
+
+
+activation function 
+op1 = f(xi *w)
+op2...
+op3...
+
+---Here all Output will Dependent on each other -----
+by there sequence of information kept
+
+ 
+
+it all do in (time)t=1 .... (Cycle)
+
+# Word in a Form of Scalar value
+
+
