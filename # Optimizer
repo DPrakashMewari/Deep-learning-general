@@ -1,0 +1,31 @@
+# Optimizer
+
+Optimizer are method or algo which is used to change the attribute of your neural network such as weight and learning rate in order to reduce the losses.
+.Optimizer help to get result faster.
+
+1. Gradient Descent
+2. Stochastic Gradient Descent
+3. Mini Batch Gradient Descent 
+4. SGD with Momentum Based Gradient Descent
+5. Adagrad
+6. RMSprop
+7. Adam
+
+
+We have neural network,we pass input+biased to hidden to op will predict based on some activation function we predicted our y value which y hat it was not same as we want so we use optimizer at this time.
+
+1. Gradient Descent : what gradient descent does it takes whole record it takes in a Particular Epochs.If we do small records its will definitely perform better.But for 1 Million record it takes Huge number of iteration.
+
+2. Stochastic Gradient Descent: Take 1 number of records.It is less computation expensive . But it also takes huge no of time. It is Run equal to the Number of records
+
+3. Mini-Batch SGD: Here we take a Batch size,means some constant value.Your batch size divide by records no. Example 10000/1000 record --> It will take 10 iteration in particular epochs.
+It is also less computationally expensive.It convergence is like a zig zag(Covergence relate to global minima or reach to the minima).It not take much time.
+
+
+4.SGD With Momentum : Whatever the noise in SGD it will be overcome by this.It add some layer moving average or Exponetial Weighted Average {t,t-1}. Here in some beta term will work as hyperparameter.It will help us smoothning this curve and we will be able reach global minima.
+
+5.AdaGrad (Adaptive Gradient Descent): Here Learning rate matters.Previsouly in other optimizer we use the fixed learning {0.01 > or less}. But In case of AdaGrad Learning rate will keep changing to reach global minima.Also there is timestamp.Here is Disadvantage in Deep nn your weight == new it will not changing deep nn.
+
+6.AdaDelta and Rmsprop : It is same as adagrad &  momentum.Here something will be applied called smoothening using this beta will be not be smaller.
+
+7. Adam {Adaptive Moment Estimation}: It is combination again with momentum {Smoothning}and rmsprop {Learning rate}.
