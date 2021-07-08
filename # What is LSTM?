@@ -1,0 +1,21 @@
+# What is LSTM?
+Long short term memory network.Are special kind of RNN.
+It is capable for long term Dependency.
+
+* It is designed for avoiding dependency problem Such as Vanishing gradient Descent
+
+Three Components of lstm which each parts performs an individual function.
+
+Forget Irrelvant Information <--> Add/Update new Information  <--> Pass Updated Information.
+
+*First part will see it is relevant or it can be forgotten 
+
+*Second part try to learn new information from input to this part 
+
+*Third part will pass the updated information which was current timestamp to next timestamp
+
+
+https://www.analyticsvidhya.com/blog/2021/03/introduction-to-long-short-term-memory-lstm/?
+
+https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+
