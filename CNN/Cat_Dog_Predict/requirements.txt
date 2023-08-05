@@ -1,0 +1,6 @@
+keras
+tensorflow
+pandas 
+numpy
+pillow
+scipy
