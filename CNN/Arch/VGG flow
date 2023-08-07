@@ -1,0 +1,26 @@
+Architectures 
+
+VGG Net 
+
+Input (224x224 RGB image) -> Convolution (64 filters, 3x3) -> ReLU -> Convolution (64 filters, 3x3) -> ReLU -> Max Pooling (2x2) -> Convolution (128 filters, 3x3) -> ReLU -> Convolution (128 filters, 3x3) -> ReLU -> Max Pooling (2x2) -> Convolution (256 filters, 3x3) -> ReLU -> Convolution (256 filters, 3x3) -> ReLU -> Convolution (256 filters, 3x3) -> ReLU -> Max Pooling (2x2) -> Convolution (512 filters, 3x3) -> ReLU -> Convolution (512 filters, 3x3) -> ReLU -> Convolution (512 filters, 3x3) -> ReLU -> Max Pooling (2x2) -> Convolution (512 filters, 3x3) -> ReLU -> Convolution (512 filters, 3x3) -> ReLU -> Convolution (512 filters, 3x3) -> ReLU -> Max Pooling (2x2) -> Flatten -> Fully Connected (4096) -> ReLU -> Dropout -> Fully Connected (4096) -> ReLU -> Dropout -> Fully Connected (1000) -> Softmax
+
+
+Input
+  ↓
+Conv2D (64 filters, 3x3) → ReLU → Conv2D (64 filters, 3x3) → ReLU → MaxPooling (2x2)
+  ↓
+Conv2D (128 filters, 3x3) → ReLU → Conv2D (128 filters, 3x3) → ReLU → MaxPooling (2x2)
+  ↓
+Conv2D (256 filters, 3x3) → ReLU → Conv2D (256 filters, 3x3) → ReLU → Conv2D (256 filters, 3x3) → ReLU → MaxPooling (2x2)
+  ↓
+Conv2D (512 filters, 3x3) → ReLU → Conv2D (512 filters, 3x3) → ReLU → Conv2D (512 filters, 3x3) → ReLU → MaxPooling (2x2)
+  ↓
+Conv2D (512 filters, 3x3) → ReLU → Conv2D (512 filters, 3x3) → ReLU → Conv2D (512 filters, 3x3) → ReLU → MaxPooling (2x2)
+  ↓
+Flatten
+  ↓
+Fully Connected (4096) → ReLU → Dropout
+  ↓
+Fully Connected (4096) → ReLU → Dropout
+  ↓
+Fully Connected (1000) → Softmax

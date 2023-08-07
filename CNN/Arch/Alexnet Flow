@@ -1,0 +1,44 @@
+Architectures 
+AlexNet
+
+
+Input (227x227 RGB image) -> Convolution (96 filters, 11x11, stride=4) -> 
+
+ReLU -> Max Pooling (3x3, stride=2) -> Convolution (256 filters, 5x5, padding=2) -> ReLU -> 
+
+Max Pooling (3x3, stride=2) -> 
+
+Convolution (384 filters, 3x3, padding=1) -> ReLU -> 
+
+Convolution (384 filters, 3x3, padding=1) -> ReLU -> 
+
+Convolution (256 filters, 3x3, padding=1) -> ReLU -> Max Pooling (3x3, stride=2) -> 
+Flatten -> 
+Fully Connected (4096) -> ReLU -> Dropout ->
+Fully Connected (4096) -> ReLU -> Dropout -> 
+Fully Connected (1000) -> Softmax
+
+-------------
+
+Input
+  ↓
+Conv2D (96 filters, 11x11, stride=4) → ReLU → MaxPooling (3x3, stride=2)
+  ↓
+Conv2D (256 filters, 5x5, padding=2) → ReLU → MaxPooling (3x3, stride=2)
+  ↓
+Conv2D (384 filters, 3x3, padding=1) → ReLU
+  ↓
+Conv2D (384 filters, 3x3, padding=1) → ReLU
+  ↓
+Conv2D (256 filters, 3x3, padding=1) → ReLU → MaxPooling (3x3, stride=2)
+  ↓
+Flatten
+  ↓
+Fully Connected (4096) → ReLU → Dropout
+  ↓
+Fully Connected (4096) → ReLU → Dropout
+  ↓
+Fully Connected (1000) → Softmax
+
+
+

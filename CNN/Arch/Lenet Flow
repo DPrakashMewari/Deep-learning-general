@@ -1,0 +1,43 @@
+Architecture
+
+LeNET (Layers)
+
+Input (32x32 grayscale image) -> 
+
+Convolution (6 filters, 5x5) -> 
+
+ReLU -> Average Pooling (2x2) -> 
+
+Convolution (16 filters, 5x5) -> 
+
+ReLU -> Average Pooling (2x2) -> 
+
+Flatten -> Fully Connected (120) -> 
+
+ReLU -> Fully Connected (84) -> 
+
+ReLU -> Fully Connected (10) -> 
+
+Softmax
+
+
+
+--*----------
+Input
+  ↓
+Conv2D (6 filters, 5x5) → ReLU → AvgPooling (2x2)
+  ↓
+Conv2D (16 filters, 5x5) → ReLU → AvgPooling (2x2)
+  ↓
+Flatten
+  ↓
+Fully Connected (120) → ReLU
+  ↓
+Fully Connected (84) → ReLU
+  ↓
+Fully Connected (10) → Softmax
+
+
+
+
+

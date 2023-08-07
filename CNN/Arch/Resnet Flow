@@ -1,0 +1,27 @@
+Architecture 
+
+Resnet Flow
+
+
+Input (224x224 RGB image) -> Convolution (64 filters, 7x7, stride=2) -> ReLU -> Max Pooling (3x3, stride=2) -> Residual Block -> Residual Block -> Residual Block -> Residual Block -> Residual Block -> Average Pooling (7x7) -> Flatten -> Fully Connected (1000) -> Softmax
+
+
+Input
+  ↓
+Conv2D (64 filters, 7x7, stride=2) → ReLU → MaxPooling (3x3, stride=2)
+  ↓
+Residual Block
+  ↓
+Residual Block
+  ↓
+Residual Block
+  ↓
+Residual Block
+  ↓
+Residual Block
+  ↓
+AvgPooling (7x7)
+  ↓
+Flatten
+  ↓
+Fully Connected (1000) → Softmax
